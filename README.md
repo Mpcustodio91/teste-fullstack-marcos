@@ -3,12 +3,14 @@
 Estamos procurando uma pessoa desenvolvedora que possa agregar em nosso time, principalmente quem gosta de propor soluções e inovações. Estamos montando nosso novo time de Produtos e pra isso precisamos de pessoas que conheçam:
 
 Front-end: React, React Native ♥️ <br>
-Backend: NodeJS
-Banco de Dados: MySQL / NoSQL (Firebase)
-GIT
-Ter trabalhado antes em equipes ágeis
+Backend: NodeJS <br>
+Banco de Dados: MySQL / NoSQL (Firebase) <br>
+GIT <br>
+Ter trabalhado antes em equipes ágeis <br>
+<br>
 
 Mas também será ótimo se você conhecer:
+<br>
 
 Docker e Docker-compose
 
