@@ -9,10 +9,6 @@ GIT <br>
 Ter trabalhado antes em equipes ágeis <br>
 <br>
 
-Mas também será ótimo se você conhecer:
-<br>
-
-Docker e Docker-compose
 
 <h3> Acha que se enquadra no perfil? Temos um teste abaixo para entendermos mais seu conhecimento. </h3>
 
