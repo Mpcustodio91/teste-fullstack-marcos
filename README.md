@@ -12,5 +12,5 @@ Mas também será ótimo se você conhecer:
 
 Docker e Docker-compose
 
-# Acha que se enquadra no perfil? Temos um teste abaixo para entendermos mais seu conhecimento.
+<h2> Acha que se enquadra no perfil? Temos um teste abaixo para entendermos mais seu conhecimento. </h2>
 
