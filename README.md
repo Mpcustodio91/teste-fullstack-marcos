@@ -1,47 +1,98 @@
-# teste-fullstack-marcos
 
-Estamos procurando uma pessoa desenvolvedora que possa agregar em nosso time, principalmente quem gosta de propor soluções e inovações. Estamos montando nosso novo time de Produtos e pra isso precisamos de pessoas que conheçam:
+# Hi 👋, I'm Marcos Custodio
+#### Sou canditato a vaga de Desenvolvedor Full Stak
 
-Front-end: React, React Native ♥️ <br>
-Backend: NodeJS <br>
-Banco de Dados: MySQL / NoSQL (Firebase) <br>
-GIT <br>
-Ter trabalhado antes em equipes ágeis <br>
-<br>
+Abaixo estão as intruções para executar o projeto
+
+# Backend
+
+## Rotas
+
+### Lista de filmes.
+```http
+  GET localhost:3000/movies
+```
+
+| Parametros| Tipo    | Descrição                       |
+| :-------- | :------- | :-------------------------------- |
+| `page`    | `number` | (opcional): número da página a ser retornada (padrão: 1) |
+| `limit`   | `number` | (opcional): número de itens por página (padrão: 10) |
 
 
-Acha que se enquadra no perfil? Temos um teste abaixo para entendermos mais seu conhecimento.
+Resposta
+A resposta contém os seguintes campos:
 
-## Desafio B - Desenvolvedor Full-Stack - Node e React
+movies: lista de filmes
 
-O projeto tem como objetivo ser um catálogo de filmes com informações básicas de título, descrição, diretor e produtor.
-Sua aplicação deverá conter: <br>
+totalPages: número total de páginas
 
-O back-end deverá ser uma API em Node que contenha:
-End-point que consulta 50 filmes, extrai as informações de título, banner, descrição, diretor e produtor e salva no banco de dados da aplicação. A API para extração dos filmes é: https://ghibliapi.herokuapp.com/#tag/Films { Pode utilizar outra de sua preferência } <br>
+currentPage: número da página atual
 
-End-point de consulta com paginação de 10 em 10 a todos os filmes que estão no nosso banco de dados.
+totalItems: número total de filmes
 
-O seu front-end deverá ser feito em React e irá conter:
+### Retorna um filme com base no ID.
 
-Tela com a exibição dos filmes consultado de forma paginada ao back-end da aplicação;
+```http
+  GET /movies/:id
+```
 
-Botão de atualizar que acessará o end-point que faz a consulta aos 50 filmes e atualiza nosso banco de dados;
+| Parametros| Tipo    | Descrição                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `number` | (obrigatório): filme a ser retornado  |
 
-## Requisitos básicos
+### Atualiza o banco de dados com uma lista de filmes.
+```http
+  GET /movies/fetch
+```
 
-Utilizar NodeJs no back-end e React no front-end;
+Resposta
 
-Ter uma documentação da API;
+A resposta contém o campo success, que indica se a atualização foi bem-sucedida.
 
-Ter um readme que explique como executar os projetos;
 
-Estar versionado no GitHub
 
-Diferenciais:
-Ter cobertura de testes;
-Boas práticas de desenvolvimento;
-Clean Code;
+## Tecnologias utilizadas
+- Node.js
+- Express.js
+- MySQL
+- Axios
 
-Ter realizado deploy do projeto.
+## Como executar
+Clone este repositório.
+Crie um arquivo .env na raiz do projeto com as seguintes variáveis de ambiente:
+- DB_HOST: host do banco de dados
+- DB_USER: usuário do banco de dados
+- DB_PASSWORD: senha do banco de dados
+- DB_NAME: nome do banco de dados
+- API_KEY: chave da API do The Movie DB
+Instale as dependências com o comando
+```bash
+npm install.
+```
+Execute a aplicação com o comando 
+```bash
+npm start.
+```
+## front end
 
+Execute a aplicação com o comando:
+```bash
+npm install.
+```
+
+Insira os dados do seu banco MySql no arquivo .env
+
+- DB_HOST = 'localhost'
+- DB_USER = 'root'
+- DB_PASSWORD = ''
+- DB_NAME = 'movies'
+
+Crie um banco de dados com o nome do seu DB_NAME e nao se preocupe pois a aplicação vai criar as tabelas pra você.
+
+Depois execute o comando:
+
+```bash
+npm run dev.
+```
+
+e certifique-se de que o banco de dados esteja rodando na porta 3000
